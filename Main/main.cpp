@@ -11,15 +11,13 @@ int main(int argc, const char * argv[]) {
     
     Solution s;
     
-    vector<vector<int>> testCasesA = {{1,10,100}, {1,2,3}};
-    vector<vector<int>> testCasesB = {{1000}, {4,4,4}};
+    vector<TreeNode*> testCasesA = {new TreeNode(1, new TreeNode(2, new TreeNode(3), new TreeNode(4)), new TreeNode(2, new TreeNode(4), new TreeNode(3))), new TreeNode(1, new TreeNode(2, nullptr, new TreeNode(3)), new TreeNode(2, nullptr, new TreeNode(3))), nullptr, new TreeNode(1, new TreeNode(2), new TreeNode(3))};
     
     for(int i = 0; i < testCasesA.size(); i++) {
         cout << "Test case " + to_string(i) + ": ";
-        for(auto result : {s.longestCommonPrefix(testCasesA[i], testCasesB[i])}) {
-            cout << result  << " ";
+        for(auto result : {s.isSymmetric(testCasesA[i])}) {
+            cout << result << endl;
         }
-        cout << endl;
     }
     
     return 0;

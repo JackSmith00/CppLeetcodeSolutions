@@ -7,7 +7,7 @@
 
 #pragma once
 #include <iostream>
-#include <map>
+#include "TreeNode.h"
 
 using namespace std;
 
@@ -23,4 +23,11 @@ class Solution {
     int findMinDifference(vector<string>& timePoints); // 539
     string mergeAlternately(string word1, string word2); // 1768
     string largestNumber(vector<int>& nums); // 179
+    bool canConstruct(string ransomNote, string magazine); // 383
+    vector<int> preorderTraversal(TreeNode* root); //144
+    vector<int> inorderTraversal(TreeNode* root); // 94
+    vector<int> postorderTraversal(TreeNode* root); // 145
+    vector<vector<int>> levelOrder(TreeNode* root); // 102
+    int maxDepth(TreeNode* root); // 104
+    bool isSymmetric(TreeNode* root); // 101
 };

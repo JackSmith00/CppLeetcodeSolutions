@@ -1,4 +1,5 @@
 #include "solutions.h"
+#include <map>
 
 void extractWordsAndUniqueStatus(string& s, map<string, bool>& uncommonMap) {
     int pos;
