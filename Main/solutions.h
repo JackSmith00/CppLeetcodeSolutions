@@ -30,4 +30,13 @@ class Solution {
     vector<vector<int>> levelOrder(TreeNode* root); // 102
     int maxDepth(TreeNode* root); // 104
     bool isSymmetric(TreeNode* root); // 101
+    bool hasPathSum(TreeNode* root, int targetSum); // 112
+    bool canArrange(vector<int>& arr, int k); // 1497
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder); // 106
+    TreeNode* sortedArrayToBST(vector<int>& nums); // 108
+    vector<int> arrayRankTransform(vector<int>& arr); // 1331
+    int minSubarray(vector<int>& nums, int p); // 1590
+    long long dividePlayers(vector<int>& skill); // 2491
+    int minLength(string s); // 2696
+    int minSwaps(string s); // 1963
 };
