@@ -6,42 +6,22 @@
 //
 
 #include "solutions.h"
-#include "CustomStack.h"
-
-ostream& operator<<(ostream& stream, TreeNode* treeNodePtr) {
-    Solution s;
-    vector<vector<int>> order = s.levelOrder(treeNodePtr);
-    for(vector<int> level : order) {
-        for(int node : level) {
-            stream << node << ' ';
-        }
-    }
-    return stream;
-}
-
-ostream& operator<<(ostream& stream, vector<int> intVector) {
-    stream << "[";
-    for(int i = 0; i < intVector.size()-1; i++) {
-        stream << intVector[i] << ",";
-    }
-    stream << intVector[intVector.size()-1] << "]";
-    return stream;
-}
+#include "CoutHelpers.h"
 
 int main(int argc, const char * argv[]) {
     
     Solution s;
-
-    vector<string> testCasesA = {"][][", "]]][[[", "[]"};
     
-//    vector<int> testCasesB = {5, 7, 10, 3, 85};
+    vector<vector<int>> testCasesA = {{10,10,10,10,10}, {1,10,3,3,3}, {756902131,995414896,95906472,149914376,387433380,848985151}};
+    
+    vector<int> testCasesB = {5, 3, 6};
 
     for(int i = 0; i < testCasesA.size(); i++) {
         cout << "Test case " + to_string(i) + ": ";
-        for(auto result : {s.minSwaps(testCasesA[i])}) {
+        for(auto result : {s.maxKelements(testCasesA[i], testCasesB[i])}) {
             cout << result << endl;
         }
     }
-    
+        
     return 0;
 }

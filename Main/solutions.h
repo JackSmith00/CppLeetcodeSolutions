@@ -8,6 +8,7 @@
 #pragma once
 #include <iostream>
 #include "TreeNode.h"
+#include "Node.h"
 
 using namespace std;
 
@@ -39,4 +40,14 @@ class Solution {
     long long dividePlayers(vector<int>& skill); // 2491
     int minLength(string s); // 2696
     int minSwaps(string s); // 1963
+    int minAddToMakeValid(string s); // 921
+    int maxWidthRamp(vector<int>& nums); // 962
+    TreeNode* buildTree105(vector<int>& preorder, vector<int>& inorder); // 105
+    Node* connect(Node* root); // 116
+    int smallestChair(vector<vector<int>>& times, int targetFriend); // 1942
+    int findMaxConsecutiveOnes(vector<int>& nums); // 485
+    int findNumbers(vector<int>& nums); // 1295
+    vector<int> sortedSquares(vector<int>& nums); // 977
+    int minGroups(vector<vector<int>>& intervals); // 2406
+    long long maxKelements(vector<int>& nums, int k); // 2530
 };
